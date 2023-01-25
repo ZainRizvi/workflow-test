@@ -16,6 +16,7 @@ jobs:
         run: |
           echo "I'm in the first step"
       - name: Run two
+        continue-on-error: true
         shell: bash
         run: |
           fakecommand should fail
