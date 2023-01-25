@@ -1,0 +1,23 @@
+name: continued-flow
+
+on:
+ pull_request:
+ workflow_dispatch:
+
+
+jobs:
+  the-flow:
+    name: the-first-flow:
+    steps:
+      - name: Run one
+        shell: bash
+        run: |
+          echo "I'm in the first step"
+      - name: Run two
+        shell: bash
+        run: |
+          fakecommand should fail
+      - name: Run one
+        shell: bash
+        run: |
+          echo "I'm in the third step. Do I get run?"
