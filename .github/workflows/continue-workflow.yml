@@ -7,7 +7,7 @@ on:
 
 jobs:
   the-flow:
-    name: the-first-flow:
+    name: the-first-flow
     steps:
       - name: Run one
         shell: bash
