@@ -7,7 +7,8 @@ on:
 
 jobs:
   the-flow:
-    name: the-first-flow
+    name: the-first-
+    runs-on: ubuntu-latest
     steps:
       - name: Run one
         shell: bash
